@@ -40,3 +40,13 @@ function getPresentation( name, characterClass, level ) {
     return `${name} -- ${characterClass} (Level: ${level})`
 
 }
+
+
+
+console.log(calculateDamage(attack, defense));
+
+console.log(isAlive(health));
+
+console.log(canCastSpell(mana, 30, false));
+
+console.log(getPresentation(name, characterClass, level));
