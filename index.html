@@ -18,26 +18,40 @@
 </head>
 <body>
 
-  <!-- Error: div en lugar de header -->
-  <div class="header">
-    <!-- Error: div en lugar de nav -->
-    <div class="nav">
-      <span class="logo">Chronicles of Code</span>
-      <!-- Error: div en lugar de ul/li para lista de navegación -->
-      <div class="nav-links">
-        <a href="#personaje">Personaje</a>
-        <a href="#stats">Stats</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#desafio">Desafiar</a>
-      </div>
-    </div>
-  </div>
+  <header>
+
+    <nav aria-label="principal navigation" >
+
+      <h1 class="logo">Chronicles of Code</h1>
+      <ul class="nav-links">
+
+        <li>
+          <a href="#character">Characters</a>
+        </li>
+
+        <li>
+          <a href="#stats">Stats</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#challenge">Challenge</a>
+        </li>
+
+      </ul>
+    
+    </nav>
+    
+  </header>
 
   <!-- Error: div en lugar de main -->
   <div class="main">
 
     <!-- Error: div en lugar de section -->
-    <div class="hero" id="personaje">
+    <div class="hero" id="character">
       <!-- Error: img sin atributo alt -->
       <img src="https://picsum.photos/seed/zara/120/120" class="avatar">
       <div class="hero-text">
@@ -98,7 +112,7 @@
     </div>
 
     <!-- Error: div en lugar de section -->
-    <div class="skills-section" id="habilidades">
+    <div class="skills-section" id="skills">
       <!-- Error: div en lugar de h2 -->
       <div class="section-title">Habilidades</div>
 
@@ -147,7 +161,7 @@
     </div>
 
     <!-- Error: div en lugar de section -->
-    <div class="challenge-section" id="desafio">
+    <div class="challenge-section" id="challange">
       <!-- Error: div en lugar de h2 -->
       <div class="section-title">¿Te animás a desafiarla?</div>
       <!-- Error: div en lugar de p -->
