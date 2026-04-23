@@ -179,3 +179,29 @@ input, select {
   margin-top: 16px;
   max-width: 600px;
 }
+
+
+
+:root {
+  --accent-color: #e94560;
+}
+
+.hero-meta {
+  margin-top: 20px;
+}
+
+.hero-meta dt {
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.hero-meta dd {
+  margin: 0;
+}
+
+
+.stat-card img {
+  width: 40px;
+  border-radius: 50%;
+}
