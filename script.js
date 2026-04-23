@@ -24,3 +24,12 @@ function calculateDamage( attack, defense ) {
 
 }
 
+
+const isAlive = (health) => health > 0 ;
+
+
+const  canCastSpell = (currentMana, spellCost, isStunned) => {
+
+    return currentMana >= spellCost && !isStunned 
+
+}
