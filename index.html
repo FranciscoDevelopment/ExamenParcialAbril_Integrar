@@ -47,31 +47,33 @@
     
   </header>
 
-  <!-- Error: div en lugar de main -->
-  <div class="main">
+  <main class="main">
 
     <!-- Error: div en lugar de section -->
-    <div class="hero" id="character">
+    <section class="hero" id="character">
       <!-- Error: img sin atributo alt -->
-      <img src="https://picsum.photos/seed/zara/120/120" class="avatar">
-      <div class="hero-text">
+      <img alt="landscape context image" src="https://picsum.photos/seed/zara/120/120" class="avatar">
+      <article class="hero-text">
+        
         <!-- Error: div en lugar de h1 -->
-        <div class="hero-title" style="font-size: 2.5rem; font-weight: bold; color: #e94560;">Zara Darkbane</div>
-        <div class="class-badge">Hechicera</div>
+        <h1 class="hero-title" aria-describedby="Sorceress-type" >Zara Darkbane</h1>
+
+        <h2 id="Sorceress-type" class="class-badge">Sorceress</h2>
+
         <!-- Error: div en lugar de p -->
-        <div class="hero-bio" style="margin-top: 16px; max-width: 600px;">
-          Invocadora de los planos oscuros, Zara domina el arte de la destrucción arcana.
-          Sus hechizos pueden desintegrar escudos mágicos y paralizar a los enemigos más poderosos.
-          Busca rivales que se atrevan a desafiarla.
-        </div>
+        <p id="Zara-Darkbane-Description" class="hero-bio">
+          Summoner of the dark planes, Zara masters the art of arcane destruction.
+          Her spells can disintegrate magical shields and paralyze the most powerful enemies.
+          She seeks rivals who dare to challenge her.
+        </p>
         <!-- Error: div en lugar de dl/dt/dd para lista de definición -->
         <div class="hero-meta" style="margin-top: 20px;">
           <div style="margin-bottom: 6px;"><span style="color: #e94560;">Nivel:</span> 7</div>
           <div style="margin-bottom: 6px;"><span style="color: #e94560;">Alineación:</span> Neutral Maligna</div>
           <div><span style="color: #e94560;">Origen:</span> Torre de los Arcanos</div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
 
     <!-- Error: div en lugar de section -->
     <div class="stats-section" id="stats">
@@ -188,7 +190,7 @@
       </form>
     </div>
 
-  </div><!-- /main -->
+  </main>
 
   <!-- Error: div en lugar de footer -->
   <div class="footer">
