@@ -222,3 +222,43 @@ input, select {
   gap: 4px;
   flex-wrap: wrap;
 }
+
+
+
+/* Form layout */
+#challenge-form {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#challenge-form input,
+#challenge-form select {
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+#challenge-form strong {
+    font-size: 0.8rem;
+    color: #aac;
+    font-weight: normal;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .challenge-section {
+        padding: 40px 20px;
+    }
+
+    input,
+    select {
+        max-width: 100%;
+    }
+}
