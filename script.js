@@ -33,3 +33,10 @@ const  canCastSpell = (currentMana, spellCost, isStunned) => {
     return currentMana >= spellCost && !isStunned 
 
 }
+
+
+function getPresentation( name, characterClass, level ) {
+
+    return `${name} -- ${characterClass} (Level: ${level})`
+
+}
