@@ -182,30 +182,52 @@
 
     <!-- Error: div en lugar de section -->
     <section class="challenge-section" id="challange">
-      <!-- Error: div en lugar de h2 -->
-      <div class="section-title">¿Te animás a desafiarla?</div>
-      <!-- Error: div en lugar de p -->
-      <div class="challenge-intro" style="margin-bottom: 24px; max-width: 600px;">
-        Registrá tu personaje para enfrentarte a Zara Darkbane en el próximo torneo.
-        Solo los más valientes (o los más locos) se atreven.
-      </div>
-      <!-- Error: formulario sin labels, solo con placeholder -->
-      <form id="challenge-form">
-        <!-- Error: input sin label asociado -->
-        <input type="text" id="challenger-name" placeholder="Nombre de tu personaje">
-        <!-- Error: input sin label asociado -->
-        <input type="text" id="challenger-class" placeholder="Clase (Guerrero, Arquero, Paladin...)">
-        <!-- Error: select sin label asociado -->
-        <select id="challenger-level">
-          <option value="">Seleccioná tu nivel</option>
-          <option value="1">Nivel 1 – 3</option>
-          <option value="4">Nivel 4 – 6</option>
-          <option value="7">Nivel 7 – 9</option>
-          <option value="10">Nivel 10+</option>
+     
+      <h2 id="section-challenge" class="section-title">Dare to Challenge Her?</h2>
+
+      <p class="challenge-intro">
+       Register your character to face Zara Darkbane in the next tournament.
+       Only the bravest (or the craziest) dare.
+      </p>
+
+      <form id="challenge-form" aria-labelledby="section-challenge">
+
+        <label for="challenger-name">Character name</label>
+        <input
+          type="text"
+          id="challenger-name"
+          name="challenger-name"
+          required
+          aria-describedby="name-hint"
+          placeholder="e.g. Aldric the Bold"
+        >
+        <span id="name-hint">Enter the name your character is known by.</span>
+
+        <label for="challenger-class">Class</label>
+        <input
+          type="text"
+          id="challenger-class"
+          name="challenger-class"
+          required
+          aria-describedby="class-hint"
+          placeholder="e.g. Warrior, Archer, Paladin..."
+        >
+        <span id="class-hint">Warrior, Archer, Paladin, Mage, etc.</span>
+
+        <label for="challenger-level">Level</label>
+        <select id="challenger-level" name="challenger-level" required>
+          <option value="">Select your level</option>
+          <option value="1">Level 1 – 3</option>
+          <option value="4">Level 4 – 6</option>
+          <option value="7">Level 7 – 9</option>
+          <option value="10">Level 10+</option>
         </select>
-        <!-- Error: div en lugar de button con type="submit" -->
-        <div class="btn" id="submit-btn">Inscribirme al torneo</div>
+
+        <button type="submit" class="btn">Join the tournament</button>
+
       </form>
+
+      
     </section>
 
   </main>
