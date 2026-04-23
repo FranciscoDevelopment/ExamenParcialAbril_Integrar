@@ -126,3 +126,80 @@
   - ¿Cambiarías la forma en que le pedís cosas a la IA la próxima vez? ¿Por qué?
 -->
 ```
+
+
+PROPMT 1: Cluade Code
+
+
+Okey ahora dame un colorido del website con buen contraste , tal como pide el enunciado, refenrencia el PDF:
+
+Respuesta:
+
+
+  Los errores de contraste marcados en style.css son 6 específicos. Según WCAG AA se necesita 4.5:1 para texto normal. Estos son los cambios exactos a hacer:
+
+Selector	Problema	Fix
+body	#bbb sobre #f5f5f5 → ratio ~1.7:1	color: #ffffff
+.nav-links a	#555 sobre #1a1a2e → ratio ~2.4:1	color: #ffffff
+.class-badge	#aaa sobre #e94560 → ratio ~1.6:1	color: #ffffff
+.section-title	#ccc sobre fondos oscuros → ratio ~2.3:1	color: #ffffff
+.stat-label	#888 sobre #16213e → ratio ~2.8:1	color: #c8d8ff
+.skill-cost	#777 sobre #16213e → ratio ~2.3:1	color: #c8d8ff
+Reemplazá en style.css:
+
+
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    color: #ffffff;
+    background: #f5f5f5;
+}
+
+.nav-links a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.class-badge {
+    display: inline-block;
+    background: #e94560;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c8d8ff;
+}
+
+.skill-cost {
+    font-size: 0.8rem;
+    color: #c8d8ff;
+    margin-top: 4px;
+}
+
+#c8d8ff sobre #16213e da ratio ≈ 7.2:1 — cumple AAA. #ffffff sobre todos los fondos oscuros (#1a1a2e, #0f3460, #16213e) da ratios entre 8:1 y 12:1.
+
+
+PROMPT 2: Cluade Code
+
+ya esta mapeado mi repo de github, QUiero que esta rama local se publique en una remota con el nombre development
+
+PS C:\ExamenParcialAbril_FranciscoChiressi> git push origin -u Development_Local:development
+
+git push origin -u Development_Local:development
