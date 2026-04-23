@@ -67,51 +67,69 @@
           She seeks rivals who dare to challenge her.
         </p>
         <!-- Error: div en lugar de dl/dt/dd para lista de definición -->
-        <div class="hero-meta" style="margin-top: 20px;">
-          <div style="margin-bottom: 6px;"><span style="color: #e94560;">Nivel:</span> 7</div>
-          <div style="margin-bottom: 6px;"><span style="color: #e94560;">Alineación:</span> Neutral Maligna</div>
-          <div><span style="color: #e94560;">Origen:</span> Torre de los Arcanos</div>
-        </div>
+        
+        <dl class="hero-meta">
+          
+          <dt>Level:</dt>
+          <dd>7</dd>
+          
+          <dt>Alignment:</dt>
+          <dd>Neutral Evil</dd>
+          
+          <dt>Origin:</dt>
+          <dd>Tower of the Arcanes</dd>
+        
+        </dl>
+
       </article>
     </section>
 
     <!-- Error: div en lugar de section -->
-    <div class="stats-section" id="stats">
+    <section aria-labelledby="section-stats" class="stats-section" id="stats">
       <!-- Error: div en lugar de h2 -->
-      <div class="section-title">Stats de Combate</div>
+      <h2 id="section-stats" class="section-title">Stats de Combate</h2>
+
       <div class="stats-grid">
 
         <!-- Error: div en lugar de article -->
-        <div class="stat-card">
+        <article class="stat-card">
           <!-- Error: img de icono sin alt -->
-          <img src="https://picsum.photos/seed/heart/40/40" style="width: 40px; border-radius: 50%;">
-          <div class="stat-value">80</div>
-          <div class="stat-label">Vida</div>
-        </div>
+          <img src="https://picsum.photos/seed/heart/40/40" alt="Health icon">
+          <h3 class="stat-value"><strong>80</strong></h3>
+          <h3 class="stat-label">Life</h3>
+        </article>
 
-        <div class="stat-card">
+        <article class="stat-card">
           <!-- Error: img de icono sin alt -->
-          <img src="https://picsum.photos/seed/mana/40/40" style="width: 40px; border-radius: 50%;">
-          <div class="stat-value">120</div>
-          <div class="stat-label">Mana</div>
-        </div>
+          <img src="https://picsum.photos/seed/mana/40/40" alt="Mana icon">
+          <h3 class="stat-value"><strong>120</strong></h3>
+          <h3 class="stat-label">Mana</h3>
+        </article>
 
-        <div class="stat-card">
+        <article class="stat-card">
           <!-- Error: img de icono sin alt -->
-          <img src="https://picsum.photos/seed/sword/40/40" style="width: 40px; border-radius: 50%;">
-          <div class="stat-value">45</div>
-          <div class="stat-label">Ataque</div>
-        </div>
+          <img src="https://picsum.photos/seed/sword/40/40" alt="Attack icon">
+          <h3 class="stat-value">
+            <strong>
+              45
+            </strong>
+          </h3>
+          <h3 class="stat-label">Offense</h3>
+        </article>
 
-        <div class="stat-card">
+        <article class="stat-card">
           <!-- Error: img de icono sin alt -->
-          <img src="https://picsum.photos/seed/shield/40/40" style="width: 40px; border-radius: 50%;">
-          <div class="stat-value">30</div>
-          <div class="stat-label">Defensa</div>
-        </div>
+          <img src="https://picsum.photos/seed/shield/40/40" alt="Defense icon">
+          <h3 class="stat-value">
+            <strong>
+              30
+            </strong>
+          </h3>
+          <h3 class="stat-label">Defense</h3>
+        </article>
 
       </div>
-    </div>
+    </section>
 
     <!-- Error: div en lugar de section -->
     <div class="skills-section" id="skills">
