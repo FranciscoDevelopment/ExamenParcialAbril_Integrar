@@ -132,56 +132,56 @@
     </section>
 
     <!-- Error: div en lugar de section -->
-    <div class="skills-section" id="skills">
+    <section class="skills-section" id="skills">
       <!-- Error: div en lugar de h2 -->
-      <div class="section-title">Habilidades</div>
+      <h2 class="section-title">Skills</h2>
 
       <!-- Error: div en lugar de article -->
-      <div class="skill-card">
+      <article class="skill-card" aria-labelledby="skill-fireball">
         <!-- Error: div en lugar de h3 -->
-        <div class="skill-name" style="font-size: 1.1rem; font-weight: bold; color: #e94560;">Bola de Fuego</div>
-        <!-- Error: div en lugar de p -->
-        <div class="skill-desc">
-          Lanza una esfera de fuego puro que explota al impacto, causando daño en área.
-        </div>
-        <div class="skill-cost">Costo: 30 de mana</div>
-        <div class="tags">
-          <span class="tag">Fuego</span>
-          <span class="tag">Área</span>
-          <span class="tag">Ofensivo</span>
-        </div>
-      </div>
+        <h3 id="skill-fireball" class="skill-name">Fireball</h3>
+        <p class="skill-desc">
+          Launches a sphere of pure fire that explodes on impact, dealing area damage.
+        </p>
+        <p class="skill-cost">Cost: 30 mana</p>
+        <ul class="tags" aria-label="Tags">
+          <li class="tag">Fire</li>
+          <li class="tag">Area</li>
+          <li class="tag">Offensive</li>
+        </ul>
 
-      <div class="skill-card">
-        <div class="skill-name" style="font-size: 1.1rem; font-weight: bold; color: #e94560;">Escudo de Hielo</div>
-        <div class="skill-desc">
-          Crea una barrera de cristal helado que absorbe el siguiente golpe recibido.
-        </div>
-        <div class="skill-cost">Costo: 20 de mana</div>
-        <div class="tags">
-          <span class="tag">Hielo</span>
-          <span class="tag">Defensivo</span>
-        </div>
-      </div>
+      </article>
 
-      <div class="skill-card">
-        <div class="skill-name" style="font-size: 1.1rem; font-weight: bold; color: #e94560;">Rayo Carmesí</div>
-        <div class="skill-desc">
-          Canaliza energía arcana oscura y dispara un rayo que atraviesa cualquier escudo.
-          Aturde al objetivo durante 2 turnos.
-        </div>
-        <div class="skill-cost">Costo: 50 de mana</div>
-        <div class="tags">
-          <span class="tag">Oscuro</span>
-          <span class="tag">Aturdir</span>
-          <span class="tag">Penetrante</span>
-        </div>
-      </div>
+      <article class="skill-card" aria-labelledby="skill-ice-shield">
+        <h3 id="skill-ice-shield" class="skill-name">Ice Shield</h3>
+        <p class="skill-desc">
+          Creates a barrier of frozen crystal that absorbs the next hit received.
+        </p>
+        <p class="skill-cost">Cost: 20 mana</p>
+        <ul class="tags" aria-label="Tags">
+          <li class="tag">Ice</li>
+          <li class="tag">Defensive</li>
+        </ul>
+      </article>
 
-    </div>
+      <article class="skill-card" aria-labelledby="skill-crimson-ray">
+        <h3 id="skill-crimson-ray" class="skill-name">Crimson Ray</h3>
+        <p class="skill-desc">
+          Channels dark arcane energy and fires a ray that pierces any shield.
+          Stuns the target for 2 turns.
+        </p>
+        <p class="skill-cost">Cost: 50 mana</p>
+        <ul class="tags" aria-label="Tags">
+          <li class="tag">Dark</li>
+          <li class="tag">Stun</li>
+          <li class="tag">Piercing</li>
+        </ul>
+      </article>
+
+    </section>
 
     <!-- Error: div en lugar de section -->
-    <div class="challenge-section" id="challange">
+    <section class="challenge-section" id="challange">
       <!-- Error: div en lugar de h2 -->
       <div class="section-title">¿Te animás a desafiarla?</div>
       <!-- Error: div en lugar de p -->
@@ -206,7 +206,7 @@
         <!-- Error: div en lugar de button con type="submit" -->
         <div class="btn" id="submit-btn">Inscribirme al torneo</div>
       </form>
-    </div>
+    </section>
 
   </main>
 
